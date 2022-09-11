@@ -66,7 +66,32 @@ CIRCUIT DIAGRAM
 
 
 
-**PROGRAM** 
+# PROGRAM
+
+~~~
+// C++ code
+//
+int sensorvalue = A0;
+int LED=7;
+void setup()
+{
+  sensorvalue=0;
+  Serial.begin(9600);
+  //pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(7,OUTPUT);
+}
+void loop()
+{
+  sensorvalue = analogRead(A0);
+  //Serial.print("POT = ");
+ 
+  Serial.println(sensorvalue);
+  delay(5);
+  digitalWrite(LED,sensorvalue);
+  delay(50);
+ 
+}
+~~~
  
 
 
@@ -77,17 +102,17 @@ CIRCUIT DIAGRAM
 
 
 
-**
-**Simulation output:** 
-**
+
+# Simulation output:
 
 
-[My image](username.github.com/repository/img/image.jpg)
+![GitHub Logo](/potbef.png)
 
-
-
-
+![GitHub Logo](/potaft.png)
 
 
 
-**RESULT: ** Arduino uno analog input functioning is learned and interfaced with digital input switch .
+
+
+# RESULT: 
+ Arduino uno analog input functioning is learned and interfaced with digital input switch .
