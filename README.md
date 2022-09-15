@@ -110,6 +110,9 @@ void loop()
 
 ![GitHub Logo](/potaft.png)
 
+# Serial Monitor :
+
+![anish](ser.png)
 
 
 
